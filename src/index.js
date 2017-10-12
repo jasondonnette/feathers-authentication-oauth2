@@ -74,7 +74,7 @@ export default function init(options = {}) {
     const errorHandler = defaultErrorHandler(oauth2Settings);
 
     // register OAuth middleware
-    debug(`Registering '${name}' Express OAuth middleware TESTING`);
+    console.log(`Registering '${name}' Express OAuth middleware TESTING`);
     app.get(
       oauth2Settings.path,
       oauth2Settings.connect
